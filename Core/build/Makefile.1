@@ -1,0 +1,11 @@
+OBJS = $(SRCPPS:.cpp=.o) $(SRCS:.c=.o)
+
+EXEC = server
+$(EXEC): $(OBJS)
+	$(CXX) $(OBJS) -o $@ $(LDFLAGS)
+all: $(EXEC)
+default: $(EXEC)
+ clear:
+	$(RM) $(OBJS)
+clean: clear
+	echo "Ok"

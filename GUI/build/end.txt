@@ -1,0 +1,22 @@
+
+SOURCES += \
+		main.cpp \
+		mainwindow.cpp \
+		openform.cpp \
+		Functions.cpp \
+		../Core/head_cxx.cpp \
+		../Core/head_c.c
+
+HEADERS += \
+		mainwindow.h \
+		openform.h \
+		Functions.h \
+		../Core/head.h
+
+FORMS += \
+		mainwindow.ui \
+		openform.ui
+
+
+RESOURCES += \
+		icon.qrc

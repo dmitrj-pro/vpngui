@@ -1,0 +1,15 @@
+SRCPPS =  ./Client.cpp
+SRCS = 
+CXXFLAGS=-std=c++11
+LDFLAGS=-pthread
+OBJS = $(SRCPPS:.cpp=.o) $(SRCS:.c=.o)
+
+EXEC = client
+$(EXEC): $(OBJS)
+	$(CXX) $(OBJS) -o $@ $(LDFLAGS)
+all: $(EXEC)
+default: $(EXEC)
+ clear:
+	$(RM) $(OBJS)
+clean: clear
+	echo "Ok"

@@ -1,0 +1,3 @@
+SRCPPS =  ./Server.cpp ./main.cpp ./SCH1.cpp
+SRCS =  ./head_c.c
+CXXFLAGS=-std=c++11
